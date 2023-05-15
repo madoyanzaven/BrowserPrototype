@@ -38,16 +38,7 @@ final class HomeViewModel: HomeBusinessRules {
         coordinator.pushToHistory(loadWebViewSubject: loadWebViewSubject)
     }
     
-    func isValidURL(_ urlString: String) -> Bool {
-        guard let url = URL(string: urlString) else {
-            return false
-        }
-        return UIApplication.shared.canOpenURL(url)
-    }
-    
     func saveHistory(with history: HistoryModel) {
-        // TODO: save history
+        inputs.sqliteHistoryManager.save(history: history)
     }
 }
-
-struct HistoryModel {}

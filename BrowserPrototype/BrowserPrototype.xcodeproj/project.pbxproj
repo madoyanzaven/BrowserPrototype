@@ -11,7 +11,6 @@
 		14A6C5352A120E6300B10F76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5342A120E6300B10F76 /* SceneDelegate.swift */; };
 		14A6C53C2A120E6500B10F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C53B2A120E6500B10F76 /* Assets.xcassets */; };
 		14A6C53F2A120E6500B10F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C53D2A120E6500B10F76 /* LaunchScreen.storyboard */; };
-		14A6C54A2A120E6500B10F76 /* BrowserPrototypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5492A120E6500B10F76 /* BrowserPrototypeTests.swift */; };
 		14A6C5542A120E6500B10F76 /* BrowserPrototypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5532A120E6500B10F76 /* BrowserPrototypeUITests.swift */; };
 		14A6C5562A120E6500B10F76 /* BrowserPrototypeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5552A120E6500B10F76 /* BrowserPrototypeUITestsLaunchTests.swift */; };
 		14A6C5652A12103300B10F76 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 14A6C5642A12103300B10F76 /* SnapKit */; };
@@ -35,6 +34,16 @@
 		14A6C5992A1214F200B10F76 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5982A1214F200B10F76 /* HistoryViewController.swift */; };
 		14A6C59B2A12181A00B10F76 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C59A2A12181A00B10F76 /* HomeHeaderView.swift */; };
 		14A6C59D2A12182200B10F76 /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C59C2A12182200B10F76 /* HomeHeaderView.xib */; };
+		14A6C59F2A12192700B10F76 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C59E2A12192700B10F76 /* UITableView+Extension.swift */; };
+		14A6C5A12A1219AF00B10F76 /* SQLiteHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5A02A1219AF00B10F76 /* SQLiteHistoryManager.swift */; };
+		14A6C5A42A1219EC00B10F76 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 14A6C5A32A1219EC00B10F76 /* SQLite */; };
+		14A6C5A92A121A6200B10F76 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5A82A121A6200B10F76 /* HistoryViewModel.swift */; };
+		14A6C5AB2A121A7900B10F76 /* HistoryInputs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5AA2A121A7900B10F76 /* HistoryInputs.swift */; };
+		14A6C5AD2A121A9300B10F76 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5AC2A121A9300B10F76 /* HistoryModel.swift */; };
+		14A6C5B02A121AC800B10F76 /* EpmtyHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5AF2A121AC800B10F76 /* EpmtyHistoryView.swift */; };
+		14A6C5B22A121ACD00B10F76 /* EpmtyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C5B12A121ACD00B10F76 /* EpmtyHistoryView.xib */; };
+		14A6C5B62A121B1400B10F76 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5B42A121B1400B10F76 /* HistoryTableViewCell.swift */; };
+		14A6C5B72A121B1400B10F76 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +71,6 @@
 		14A6C53E2A120E6500B10F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14A6C5402A120E6500B10F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A6C5452A120E6500B10F76 /* BrowserPrototypeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserPrototypeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		14A6C5492A120E6500B10F76 /* BrowserPrototypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserPrototypeTests.swift; sourceTree = "<group>"; };
 		14A6C54F2A120E6500B10F76 /* BrowserPrototypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrowserPrototypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A6C5532A120E6500B10F76 /* BrowserPrototypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserPrototypeUITests.swift; sourceTree = "<group>"; };
 		14A6C5552A120E6500B10F76 /* BrowserPrototypeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserPrototypeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -86,6 +94,15 @@
 		14A6C5982A1214F200B10F76 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		14A6C59A2A12181A00B10F76 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
 		14A6C59C2A12182200B10F76 /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		14A6C59E2A12192700B10F76 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		14A6C5A02A1219AF00B10F76 /* SQLiteHistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHistoryManager.swift; sourceTree = "<group>"; };
+		14A6C5A82A121A6200B10F76 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		14A6C5AA2A121A7900B10F76 /* HistoryInputs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInputs.swift; sourceTree = "<group>"; };
+		14A6C5AC2A121A9300B10F76 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		14A6C5AF2A121AC800B10F76 /* EpmtyHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpmtyHistoryView.swift; sourceTree = "<group>"; };
+		14A6C5B12A121ACD00B10F76 /* EpmtyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpmtyHistoryView.xib; sourceTree = "<group>"; };
+		14A6C5B42A121B1400B10F76 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A6C5A42A1219EC00B10F76 /* SQLite in Frameworks */,
 				14A6C5652A12103300B10F76 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,11 +155,11 @@
 		14A6C5312A120E6300B10F76 /* BrowserPrototype */ = {
 			isa = PBXGroup;
 			children = (
-				14A6C5942A12141100B10F76 /* Manager */,
-				14A6C5872A12132700B10F76 /* Coordinator */,
-				14A6C57F2A1212B200B10F76 /* Base */,
-				14A6C5722A12116700B10F76 /* Extension */,
 				14A6C5622A120F4400B10F76 /* BundleFiles */,
+				14A6C57F2A1212B200B10F76 /* Base */,
+				14A6C5872A12132700B10F76 /* Coordinator */,
+				14A6C5942A12141100B10F76 /* Manager */,
+				14A6C5722A12116700B10F76 /* Extension */,
 				14A6C5662A12105600B10F76 /* Screen */,
 			);
 			path = BrowserPrototype;
@@ -150,7 +168,6 @@
 		14A6C5482A120E6500B10F76 /* BrowserPrototypeTests */ = {
 			isa = PBXGroup;
 			children = (
-				14A6C5492A120E6500B10F76 /* BrowserPrototypeTests.swift */,
 			);
 			path = BrowserPrototypeTests;
 			sourceTree = "<group>";
@@ -239,6 +256,7 @@
 				14A6C5752A12119000B10F76 /* UIControl+Combine.swift */,
 				14A6C5742A12119000B10F76 /* UITextField+Publisher.swift */,
 				14A6C5772A12119000B10F76 /* UIView+Extension.swift */,
+				14A6C59E2A12192700B10F76 /* UITableView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -275,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				14A6C5952A12142300B10F76 /* ReachabilityManager.swift */,
+				14A6C5A02A1219AF00B10F76 /* SQLiteHistoryManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -282,9 +301,56 @@
 		14A6C5972A1214CD00B10F76 /* History */ = {
 			isa = PBXGroup;
 			children = (
-				14A6C5982A1214F200B10F76 /* HistoryViewController.swift */,
+				14A6C5A72A121A4F00B10F76 /* View */,
+				14A6C5A62A121A4900B10F76 /* Model */,
+				14A6C5A52A121A4400B10F76 /* ViewModel */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		14A6C5A52A121A4400B10F76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5A82A121A6200B10F76 /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		14A6C5A62A121A4900B10F76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5AA2A121A7900B10F76 /* HistoryInputs.swift */,
+				14A6C5AC2A121A9300B10F76 /* HistoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		14A6C5A72A121A4F00B10F76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5AE2A121AB500B10F76 /* EmptyHistory */,
+				14A6C5B32A121AFE00B10F76 /* Cell */,
+				14A6C5982A1214F200B10F76 /* HistoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		14A6C5AE2A121AB500B10F76 /* EmptyHistory */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5AF2A121AC800B10F76 /* EpmtyHistoryView.swift */,
+				14A6C5B12A121ACD00B10F76 /* EpmtyHistoryView.xib */,
+			);
+			path = EmptyHistory;
+			sourceTree = "<group>";
+		};
+		14A6C5B32A121AFE00B10F76 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5B42A121B1400B10F76 /* HistoryTableViewCell.swift */,
+				14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +371,7 @@
 			name = BrowserPrototype;
 			packageProductDependencies = (
 				14A6C5642A12103300B10F76 /* SnapKit */,
+				14A6C5A32A1219EC00B10F76 /* SQLite */,
 			);
 			productName = BrowserPrototype;
 			productReference = 14A6C52F2A120E6300B10F76 /* BrowserPrototype.app */;
@@ -361,6 +428,7 @@
 					};
 					14A6C5442A120E6500B10F76 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 14A6C52E2A120E6300B10F76;
 					};
 					14A6C54E2A120E6500B10F76 = {
@@ -380,6 +448,7 @@
 			mainGroup = 14A6C5262A120E6300B10F76;
 			packageReferences = (
 				14A6C5632A12103300B10F76 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				14A6C5A22A1219EC00B10F76 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 14A6C5302A120E6300B10F76 /* Products */;
 			projectDirPath = "";
@@ -397,9 +466,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A6C5B22A121ACD00B10F76 /* EpmtyHistoryView.xib in Resources */,
 				14A6C59D2A12182200B10F76 /* HomeHeaderView.xib in Resources */,
 				14A6C53F2A120E6500B10F76 /* LaunchScreen.storyboard in Resources */,
 				14A6C5842A1212CF00B10F76 /* NavigationBarView.xib in Resources */,
+				14A6C5B72A121B1400B10F76 /* HistoryTableViewCell.xib in Resources */,
 				14A6C53C2A120E6500B10F76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +498,9 @@
 			files = (
 				14A6C57B2A12127A00B10F76 /* UIColor+Extension.swift in Sources */,
 				14A6C5962A12142300B10F76 /* ReachabilityManager.swift in Sources */,
+				14A6C59F2A12192700B10F76 /* UITableView+Extension.swift in Sources */,
 				14A6C58B2A12133400B10F76 /* MainCoordinator.swift in Sources */,
+				14A6C5A92A121A6200B10F76 /* HistoryViewModel.swift in Sources */,
 				14A6C5992A1214F200B10F76 /* HistoryViewController.swift in Sources */,
 				14A6C57C2A12127C00B10F76 /* UIControl+Combine.swift in Sources */,
 				14A6C58F2A1213D100B10F76 /* HomeViewModel.swift in Sources */,
@@ -438,9 +511,14 @@
 				14A6C57D2A12127F00B10F76 /* UITextField+Publisher.swift in Sources */,
 				14A6C5792A12119400B10F76 /* Collection+index.swift in Sources */,
 				14A6C5352A120E6300B10F76 /* SceneDelegate.swift in Sources */,
+				14A6C5B02A121AC800B10F76 /* EpmtyHistoryView.swift in Sources */,
+				14A6C5A12A1219AF00B10F76 /* SQLiteHistoryManager.swift in Sources */,
+				14A6C5AD2A121A9300B10F76 /* HistoryModel.swift in Sources */,
+				14A6C5B62A121B1400B10F76 /* HistoryTableViewCell.swift in Sources */,
 				14A6C57A2A12127700B10F76 /* Publisher+Extension.swift in Sources */,
 				14A6C5862A12130B00B10F76 /* ViewControllerProvider.swift in Sources */,
 				14A6C5922A12140300B10F76 /* HomeInputs.swift in Sources */,
+				14A6C5AB2A121A7900B10F76 /* HistoryInputs.swift in Sources */,
 				14A6C59B2A12181A00B10F76 /* HomeHeaderView.swift in Sources */,
 				14A6C57E2A12128200B10F76 /* UIView+Extension.swift in Sources */,
 				14A6C58A2A12133400B10F76 /* Coordinating.swift in Sources */,
@@ -452,7 +530,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14A6C54A2A120E6500B10F76 /* BrowserPrototypeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -665,15 +742,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LD82R5CD8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karapp.BrowserPrototypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrowserPrototype.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrowserPrototype";
@@ -685,11 +769,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3LD82R5CD8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.karapp.BrowserPrototypeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -786,6 +876,14 @@
 				kind = branch;
 			};
 		};
+		14A6C5A22A1219EC00B10F76 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -793,6 +891,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 14A6C5632A12103300B10F76 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		14A6C5A32A1219EC00B10F76 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14A6C5A22A1219EC00B10F76 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

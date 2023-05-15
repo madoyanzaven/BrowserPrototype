@@ -17,6 +17,7 @@ final class HomeViewController: UIViewController, WKUIDelegate {
         let navigationBarView = NavigationBarView.instanceFromNib()
         navigationBarView.backgroundColor = primaryGreen
         navigationBarView.setup(with: viewModel.navigationTitle, hideBack: true)
+        
         return navigationBarView
     }()
     lazy var headerView: HomeHeaderView = {
@@ -36,7 +37,7 @@ final class HomeViewController: UIViewController, WKUIDelegate {
     }()
     private let heightNavigationBar: CGFloat = 44
     private var currentUrl = String()
-    let viewModel: HomeViewModel = HomeViewModel(inputs: HomeInputs())
+    let viewModel: HomeViewModel = HomeViewModel(inputs: HomeInputs(sqliteHistoryManager: SQLiteHistoryManager.shared))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,7 +114,7 @@ final class HomeViewController: UIViewController, WKUIDelegate {
     
     private func loadWebView(with urlString: String) {
         guard let url = URL(string: urlString),
-        viewModel.hasAvailableNetwork() else { return }
+              viewModel.hasAvailableNetwork() else { return }
         
         let request = URLRequest(url: url)
         self.webView.load(request)
@@ -126,23 +127,18 @@ extension HomeViewController: WKNavigationDelegate {
             decisionHandler(.cancel)
             return
         }
-        
+        let urlString = url.absoluteString
         if navigationAction.navigationType == .linkActivated {
             if UIApplication.shared.canOpenURL(url) {
-                // TODO: Save history
+                currentUrl = url.absoluteString
+                viewModel.saveHistory(with: HistoryModel(url: urlString, date: Date()))
                 decisionHandler(.allow)
-                print("allow")
             } else {
                 decisionHandler(.cancel)
-                print("Failed to open URL: \(url.absoluteString)")
             }
         } else {
-            print("else")
+            viewModel.saveHistory(with: HistoryModel(url: urlString, date: Date()))
             decisionHandler(.allow)
         }
-    }
-    
-    func webView(_: WKWebView, didFinish: WKNavigation!) {
-        // TODO: Save history
     }
 }

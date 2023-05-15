@@ -25,6 +25,7 @@ final class MainCoordinator: Coordinating {
     func pushToHistory(loadWebViewSubject: PassthroughSubject<String, Never>) {
         let history = ViewControllerProvider.history
 
+        history.viewModel.setup(coordinator: self, loadWebViewSubject: loadWebViewSubject)
         navigationController.pushViewController(history, animated: true)
     }
     

@@ -13,3 +13,9 @@ enum Constants {
         static var darkGray = UIColor(rgb: 0x5E5E5E)
     }
 }
+
+extension Constants {
+    enum Foundation {
+        static let historyKey = "history"
+    }
+}
