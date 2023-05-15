@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sora-Bold.ttf">
+            <string>Sora-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lM9-hK-Mnt" customClass="NavigationBarView" customModule="BrowserTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="131"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0kd-Is-qK3">
+                    <rect key="frame" x="20" y="0.0" width="402" height="131"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfl-dS-6EH">
+                            <rect key="frame" x="0.0" y="43.666666666666657" width="15" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="3US-uW-rse"/>
+                                <constraint firstAttribute="height" constant="44" id="ZgV-MR-h36"/>
+                            </constraints>
+                            <color key="tintColor" red="0.36862745099999999" green="0.36862745099999999" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ0-kv-UJa">
+                            <rect key="frame" x="35" y="40.666666666666657" width="303" height="50"/>
+                            <fontDescription key="fontDescription" name="Sora-Bold" family="Sora" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-ER-b7b">
+                            <rect key="frame" x="358" y="43.666666666666657" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="dBd-Dw-4B3"/>
+                                <constraint firstAttribute="height" constant="44" id="qxb-9k-hyt"/>
+                            </constraints>
+                            <color key="tintColor" red="0.2470588235" green="0.25882352939999997" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="trash" catalog="system">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fIR-FR-OuL"/>
+            <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0kd-Is-qK3" firstAttribute="top" secondItem="lM9-hK-Mnt" secondAttribute="top" id="48j-if-DZ7"/>
+                <constraint firstItem="0kd-Is-qK3" firstAttribute="trailing" secondItem="fIR-FR-OuL" secondAttribute="trailing" constant="-20" id="9Fi-RQ-CdC"/>
+                <constraint firstAttribute="bottom" secondItem="0kd-Is-qK3" secondAttribute="bottom" id="Szp-8Z-eGg"/>
+                <constraint firstItem="0kd-Is-qK3" firstAttribute="leading" secondItem="fIR-FR-OuL" secondAttribute="leading" constant="20" id="f0X-qY-R2q"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="hfl-dS-6EH" id="qSP-MM-cah"/>
+                <outlet property="deleteButton" destination="bNT-ER-b7b" id="kJO-8o-hXT"/>
+                <outlet property="titleLabel" destination="QQ0-kv-UJa" id="4Mo-DM-iQ6"/>
+            </connections>
+            <point key="canvasLocation" x="174" y="-169"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="trash" catalog="system" width="117" height="128"/>
+    </resources>
+</document>
