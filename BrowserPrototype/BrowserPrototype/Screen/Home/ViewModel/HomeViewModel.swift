@@ -39,6 +39,6 @@ final class HomeViewModel: HomeBusinessRules {
     }
     
     func saveHistory(with history: HistoryModel) {
-        inputs.sqliteHistoryManager.save(history: history)
+        inputs.historyService.save(history: history)
     }
 }

@@ -33,11 +33,11 @@ final class HistoryViewModel {
     }
     
     func getHistory() {
-        items = inputs.sqliteHistoryManager.getAllHistory().sorted(by: { $0.date.compare($1.date) == .orderedDescending })
+        items = inputs.historyService.getAllHistory().sorted(by: { $0.date.compare($1.date) == .orderedDescending })
     }
     
     func deleteHistory() {
-        inputs.sqliteHistoryManager.deleteHistory()
+        inputs.historyService.deleteHistory()
         items = []
     }
     

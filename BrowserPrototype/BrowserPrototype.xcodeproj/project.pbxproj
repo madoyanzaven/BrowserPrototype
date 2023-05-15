@@ -44,6 +44,14 @@
 		14A6C5B22A121ACD00B10F76 /* EpmtyHistoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C5B12A121ACD00B10F76 /* EpmtyHistoryView.xib */; };
 		14A6C5B62A121B1400B10F76 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5B42A121B1400B10F76 /* HistoryTableViewCell.swift */; };
 		14A6C5B72A121B1400B10F76 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */; };
+		14A6C5C72A12273800B10F76 /* BaseMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5C52A12273800B10F76 /* BaseMockService.swift */; };
+		14A6C5C82A12273800B10F76 /* MockHistoryListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5C62A12273800B10F76 /* MockHistoryListService.swift */; };
+		14A6C5CC2A12276000B10F76 /* HistoryListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5CB2A12275A00B10F76 /* HistoryListFactory.swift */; };
+		14A6C5CD2A12276400B10F76 /* HistoryModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5CA2A12275A00B10F76 /* HistoryModelFactory.swift */; };
+		14A6C5D12A122AEB00B10F76 /* HistoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5CF2A1227D200B10F76 /* HistoryViewModelTests.swift */; };
+		14A6C5D62A122DB300B10F76 /* HomeBusinessRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5D52A122DB300B10F76 /* HomeBusinessRulesTests.swift */; };
+		14A6C5D82A12311000B10F76 /* HistoryBusinessRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5D72A12311000B10F76 /* HistoryBusinessRules.swift */; };
+		14A6C5DA2A12342400B10F76 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6C5D92A12342400B10F76 /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +111,14 @@
 		14A6C5B12A121ACD00B10F76 /* EpmtyHistoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpmtyHistoryView.xib; sourceTree = "<group>"; };
 		14A6C5B42A121B1400B10F76 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		14A6C5C52A12273800B10F76 /* BaseMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMockService.swift; sourceTree = "<group>"; };
+		14A6C5C62A12273800B10F76 /* MockHistoryListService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockHistoryListService.swift; sourceTree = "<group>"; };
+		14A6C5CA2A12275A00B10F76 /* HistoryModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModelFactory.swift; sourceTree = "<group>"; };
+		14A6C5CB2A12275A00B10F76 /* HistoryListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListFactory.swift; sourceTree = "<group>"; };
+		14A6C5CF2A1227D200B10F76 /* HistoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModelTests.swift; sourceTree = "<group>"; };
+		14A6C5D52A122DB300B10F76 /* HomeBusinessRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBusinessRulesTests.swift; sourceTree = "<group>"; };
+		14A6C5D72A12311000B10F76 /* HistoryBusinessRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryBusinessRules.swift; sourceTree = "<group>"; };
+		14A6C5D92A12342400B10F76 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +184,10 @@
 		14A6C5482A120E6500B10F76 /* BrowserPrototypeTests */ = {
 			isa = PBXGroup;
 			children = (
+				14A6C5C92A12275100B10F76 /* MockFactory */,
+				14A6C5C42A12272800B10F76 /* MockService */,
+				14A6C5D42A122D9C00B10F76 /* HomeTests */,
+				14A6C5CE2A12277400B10F76 /* HistoryListTests */,
 			);
 			path = BrowserPrototypeTests;
 			sourceTree = "<group>";
@@ -320,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				14A6C5AA2A121A7900B10F76 /* HistoryInputs.swift */,
+				14A6C5D72A12311000B10F76 /* HistoryBusinessRules.swift */,
 				14A6C5AC2A121A9300B10F76 /* HistoryModel.swift */,
 			);
 			path = Model;
@@ -351,6 +372,41 @@
 				14A6C5B52A121B1400B10F76 /* HistoryTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		14A6C5C42A12272800B10F76 /* MockService */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5C52A12273800B10F76 /* BaseMockService.swift */,
+				14A6C5C62A12273800B10F76 /* MockHistoryListService.swift */,
+			);
+			path = MockService;
+			sourceTree = "<group>";
+		};
+		14A6C5C92A12275100B10F76 /* MockFactory */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5CB2A12275A00B10F76 /* HistoryListFactory.swift */,
+				14A6C5CA2A12275A00B10F76 /* HistoryModelFactory.swift */,
+			);
+			path = MockFactory;
+			sourceTree = "<group>";
+		};
+		14A6C5CE2A12277400B10F76 /* HistoryListTests */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5CF2A1227D200B10F76 /* HistoryViewModelTests.swift */,
+			);
+			path = HistoryListTests;
+			sourceTree = "<group>";
+		};
+		14A6C5D42A122D9C00B10F76 /* HomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				14A6C5D52A122DB300B10F76 /* HomeBusinessRulesTests.swift */,
+				14A6C5D92A12342400B10F76 /* HomeViewModelTests.swift */,
+			);
+			path = HomeTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +566,7 @@
 				14A6C58D2A1213AA00B10F76 /* Constants.swift in Sources */,
 				14A6C57D2A12127F00B10F76 /* UITextField+Publisher.swift in Sources */,
 				14A6C5792A12119400B10F76 /* Collection+index.swift in Sources */,
+				14A6C5D82A12311000B10F76 /* HistoryBusinessRules.swift in Sources */,
 				14A6C5352A120E6300B10F76 /* SceneDelegate.swift in Sources */,
 				14A6C5B02A121AC800B10F76 /* EpmtyHistoryView.swift in Sources */,
 				14A6C5A12A1219AF00B10F76 /* SQLiteHistoryManager.swift in Sources */,
@@ -530,6 +587,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A6C5C82A12273800B10F76 /* MockHistoryListService.swift in Sources */,
+				14A6C5D12A122AEB00B10F76 /* HistoryViewModelTests.swift in Sources */,
+				14A6C5C72A12273800B10F76 /* BaseMockService.swift in Sources */,
+				14A6C5DA2A12342400B10F76 /* HomeViewModelTests.swift in Sources */,
+				14A6C5CC2A12276000B10F76 /* HistoryListFactory.swift in Sources */,
+				14A6C5CD2A12276400B10F76 /* HistoryModelFactory.swift in Sources */,
+				14A6C5D62A122DB300B10F76 /* HomeBusinessRulesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

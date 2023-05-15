@@ -33,7 +33,7 @@ final class SQLiteHistoryManager: HistoryListServicing {
     }
     
     // Create table
-    private func createTableIfNeeded() {
+    func createTableIfNeeded() {
         do {
             try database?.run(histories.create(ifNotExists: true) { table in
                 table.column(url, primaryKey: true)
@@ -67,10 +67,9 @@ final class SQLiteHistoryManager: HistoryListServicing {
     
     // Delete hostory
     func deleteHistory() {
-        let query = "DROP TABLE IF EXISTS \(Constants.Foundation.historyKey)"
+        let query = "DELETE FROM \(Constants.Foundation.historyKey)"
         do {
             try database?.run(query)
-            print("Table dropped successfully")
         } catch {
             print("Error dropping table: \(error)")
         }

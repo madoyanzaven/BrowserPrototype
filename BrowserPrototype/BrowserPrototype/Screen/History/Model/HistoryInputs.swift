@@ -8,5 +8,5 @@
 import Foundation
 
 struct HistoryInputs {
-    let sqliteHistoryManager: HistoryListServicing
+    let historyService: HistoryListServicing
 }

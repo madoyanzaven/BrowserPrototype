@@ -37,7 +37,7 @@ final class HistoryViewController: UIViewController {
     }()
     private let heightForRowAt: CGFloat = 80
     private let heightForHeader: CGFloat = 20
-    let viewModel: HistoryViewModel = HistoryViewModel(inputs: HistoryInputs(sqliteHistoryManager: SQLiteHistoryManager.shared))
+    let viewModel: HistoryViewModel = HistoryViewModel(inputs: HistoryInputs(historyService: SQLiteHistoryManager.shared))
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,5 +9,5 @@ import Combine
 import Foundation
 
 struct HomeInputs {
-    let sqliteHistoryManager: HistoryListServicing
+    let historyService: HistoryListServicing
 }
